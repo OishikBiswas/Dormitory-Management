@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dormitory Information</title>
+<style>
+body{
+font-family: "Comic Sans MS", sans-serif;
+background-color: lightgreen;
+margin=0;
+}
+h2{
+background-color: forestgreen;
+text-align= center;
+padding: 10px;
+color: white;
+}
+td{
+  padding: 7px;
+}
+input{
+  height: 20px;
+  border-radius: 10px;
+}
+input:focus, textarea:focus{
+  outline: none;
+  border: 1px solid forestgreen;
+  border: none;
+}
+textarea{
+  border-radius: 10px;
+}
+.button{
+  background-color: forestgreen;
+  color: white;
+  font-size: 18px;
+  padding: 0px 25px;
+  border: none;
+  margin-bottom: 30px;
+}
+.button:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rec;
+}
+</style>
+</head>
+
+<body>
+
+<h1 align="center">Dormitory Information Form</h1>
+<form>
+<div id="dormitory-information">
+<h2>Dormitory Information</h2>
+<table width= "100%">
+<tr>
+<td>First Name</td>
+<td>
+<input type = "text" size="25">
+</td>
+<td>Middle Name</td>
+<td>
+<input type = "text" size="25">
+</td>
+<td>Last Name</td>
+<td>
+<input type = "text" size="25">
+</td>
+</tr>
+
+<tr>
+<td>Person ID</td>
+<td>
+<input type = "text" size="25">
+</td>
+<td>Room NO</td>
+<td>
+<input type = "text" size="25">
+</td>
+<td>Joining Date</td>
+<td>
+<input type = "date" size="25">
+</td>
+</tr>
+<tr>
+  <td>Mobile No</td>
+  <td>
+  <input type = "number" size="25">
+  </td>
+</tr>
+
+<tr>
+  <td>Month</td>
+  <td>
+    <input type="month">
+  </td>
+</tr>
+
+<tr>
+  <td>Select Meals</td>
+  <td>
+    <input type="checkbox" value="lunch">Lunch
+  </td>
+  <td>
+    <input type="checkbox" value="dinner">Dinner
+  </td>
+</tr>
+
+</table>
+</div>
+
+<div id="shopping-details">
+  <h2>Shopping Information</h2>
+  <table width="100%">
+    <tr>
+      <td>Serial no</td>
+      <td>Date of Shopping</td>
+      <td>Products Bought</td>
+      <td>Amount of Products</td>
+      <td>Cost</td>
+    </tr>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        <input type="date" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        <input type="date" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        <input type="date" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        <input type="date" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+    
+    <tr>
+      <td>5</td>
+      <td>
+        <input type="date" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="text" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="monthly_bill-details">
+  <h2>Individual Monthly Bills</h2>
+  <table width="100%">
+    <tr>
+      <td>Electricity Bill</td>
+      <td>Gas Bill</td>
+      <td>Water Bill</td>
+      <td>Cook's Bill</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+    
+    <tr>
+      <td>WI-FI Bill</td>
+      <td>Other Costs</td>
+      <td>Total Cost of Monthly Bills</td>
+      <td>Total Individual Cost of Monthly Bills</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+    
+  </table>
+</div>
+
+
+<div id="management-details">
+  <h2>Cost of Management</h2>
+  <table width="100%">
+    <tr>
+      <td>Rent of Dormitory</td>
+      <td>Individual Bills</td>
+      <td>Cost of Monthly Shopping</td>
+      <td>Individual Monthly Bills</td>
+      <td>Total Cost of Management</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id="total_meal_cost-details">
+  <h2>Total Meal Cost</h2>
+  <table width="100%">
+    <tr>
+      <td>Basic Food</td>
+      <td>Spices</td>
+      <td>Total Shopping Cost</td>
+      <td>Total Meal Cost</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+    
+    <tr>
+      <td>Total Number of Meals</td>
+      <td>Total Members of Dormitory</td>
+      <td>Average Meal Cost</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="individual_meal_cost-details">
+  <h2>Individual Meal Cost</h2>
+  <table width="100%">
+    <tr>
+      <td>Total Meals Taken</td>
+      <td>Total Individual Meal Cost</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+    </tr>
+  </table>
+</div>
+
+
+<div id="imbalance_of_cost-details">
+  <h2>Imbalance of Cost</h2>
+  <table width="100%">
+    <tr>
+      <td>Cost of Monthly Shopping</td>
+      <td>Total Individual Shopping Cost</td>
+      <td>Total Individual Meal Cost</td>
+      <td>Imbalance</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="overall_cost_per_person-details">
+  <h2>Overall Cost Per Person</h2>
+  <table width="100%">
+    <tr>
+      <td>Total Cost of Management</td>
+      <td>Total Individual Shopping Cost</td>
+      <td>Imbalance</td>
+      <td>Total Individual Cost</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+      <td>
+        <input type="number" size="25">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<tr>
+  <td></td>
+  <td>
+    <input type="submit" value="Submit" class="button">
+  </td>
+  <td>
+    <input type="reset" value="Reset" class="button">
+  </td>
+  <td></td>
+</tr>
+
+</form>
+
+
+</body>
+</html>
